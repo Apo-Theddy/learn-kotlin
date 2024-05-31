@@ -4,7 +4,7 @@ import com.example.coingecko.features.data.data_source.CoinGeckoApi
 import com.example.coingecko.features.data.data_source.dtos.CoinDetailDTO.CoinDetailDTO
 import com.example.coingecko.features.data.data_source.dtos.CoinListDTO.CoinListDTO
 import com.example.coingecko.features.domain.repository.CoinRepository
-import me.tatarka.inject.annotations.Inject
+import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
     private val coinApi:CoinGeckoApi

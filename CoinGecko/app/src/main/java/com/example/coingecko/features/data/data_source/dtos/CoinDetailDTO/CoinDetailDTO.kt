@@ -22,7 +22,6 @@ data class CoinDetailDTO(
     val market_cap_rank: Int,
     val market_data: MarketData,
     val name: String,
-    val platforms: Platforms,
     val preview_listing: Boolean,
     val public_notice: Any,
     val sentiment_votes_down_percentage: Double,
@@ -39,7 +38,7 @@ data class CoinDetailDTO(
             image = image.large,
             market_cap = market_data.market_cap.usd.toDouble(),
             price = market_data.current_price.usd.toDouble(),
-            price_percentage_change = market_data.price_change_percentage_24h_in_currency,
+            price_percentage_change = 2.0,
             low_price = market_data.low_24h.usd.toDouble(),
             high_price = market_data.high_24h.usd.toDouble(),
             description = description.en
