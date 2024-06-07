@@ -15,7 +15,7 @@ class Mascota {
   constructor(nombre:String,edad:Int){
     this.nombre = nombre;
     this.edad = edad;
-  }
+  } 
 
   fun saludar(){
     println("Hola me llamo $nombre y tengo $edad años")
